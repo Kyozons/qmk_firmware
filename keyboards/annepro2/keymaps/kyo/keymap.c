@@ -92,11 +92,11 @@ qk_tap_dance_action_t tap_dance_actions[] = {
   * ,-----------------------------------------------------------------------------------------.
   * |  `  |  F1 |  F2 |  F3 |  F4 |  F5 |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |  DELETE   |
   * |-----------------------------------------------------------------------------------------+
-  * | Tab    |  -  | UP  | .  |  p  |  y  |  f  |  g  |  c  |  r  | PS | HOME | END |   }    |
+  * | Tab     |  -  | UP  | .  |  p  |  y  |  f  |  g  |  c  |  r  | PS | HOME | END |   }    |
   * |-----------------------------------------------------------------------------------------+
   * | Esc     |LEFT |DOWN |RIGHT|  u  |  i  |  d  |  h  |  t  |  ñ  | PGUP|PGDN |    Enter    |
   * |-----------------------------------------------------------------------------------------+
-  * | Shift      |V-UP |V-DWN|MUTE |  k  |  x  |  b  |  m  |  w  |INSRT| DEL |    Shift       |
+  * | Shift     |V-DWN |V-UP |MUTE |  k  |  x  |  b  |  m  |  w  |INSRT| DEL |    Shift       |
   * |-----------------------------------------------------------------------------------------+
   * | Ctrl  |  SUPER |  Alt  |              space             |  Alt  |  FN1  |  FN2  | Ctrl  |
   * \-----------------------------------------------------------------------------------------/
@@ -106,7 +106,7 @@ qk_tap_dance_action_t tap_dance_actions[] = {
     KC_GRV, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_DEL,
     KC_TRNS, KC_TRNS, KC_UP, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PSCR, KC_HOME, KC_END, KC_TRNS,
     KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_SCLN, KC_PGUP, KC_PGDN, KC_TRNS,
-    KC_TRNS, KC_VOLU, KC_VOLD, KC_MUTE, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_INS, KC_DEL, KC_TRNS,
+    KC_TRNS, KC_VOLD, KC_VOLU, KC_MUTE, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_INS, KC_DEL, KC_TRNS,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN3_LAYER), KC_TRNS
 ),
   /*
@@ -149,7 +149,7 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 [_FN4_LAYER] = KEYMAP( /* Base */
     DF(_FN1_LAYER), DF(_BASE_LAYER), KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_TRNS, ALGR(KC_Q), ALGR(KC_RBRC), LSFT(KC_8), LSFT(KC_9), KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_QUOT, KC_BSLS, KC_TRNS, KC_EXLM, KC_HASH, LSFT(KC_7), KC_GRV, KC_MINS, KC_DLR, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_QUOT, KC_BSLS, KC_TRNS, KC_EXLM, KC_HASH, LSFT(KC_7), KC_GRV, ALGR(KC_MINS), KC_DLR, KC_TRNS,
     KC_TRNS, KC_TRNS, KC_TRNS, LSFT(KC_QUOT), LSFT(KC_BSLS), KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
  ),
